@@ -36,11 +36,36 @@ The `student` field in the `Professor` class represents an association with the 
 
 Aggregation is a specialized type of association that represents “one-to-many”, “many-to-many” or “whole-part” relations between multiple objects. Usually, under aggregation, an object “has” a set of other objects and serves as a container or collection.
 
+```java
+class Department {
+    private List<Professor> professors; // Aggregation of Professors
+
+    Department(List<Professor> professors) {
+        this.professors = professors;
+    }
+}
+```
+
+Aggregation is a type of association where one class is a part of another class, but both can exist independently. In the code, Department has an aggregation relationship with Professor. The Department class has a list of Professor objects. However, a Professor can exist without a Department, and a Department can exist without a Professor.
+
 ## Composition
 
 ![alt text](image-3.png)
 
 Composition is a specific kind of aggregation, where one object is composed of one or more instances of the other. The distinction between this relation and others is that the component can only exist as a part of the container.
+
+```java
+class University {
+    private List<Department> departments; // Composition of Departments
+
+    University() {
+        this.departments = new ArrayList<>();
+        this.departments.add(new Department(new ArrayList<>()));
+    }
+}
+```
+
+Composition is a type of association where one class owns another class, and the owned class cannot exist without the owner class. In the code, University has a composition relationship with Department. The University class creates and manages Department objects. If a University object is destroyed, its Department objects are also destroyed. A Department cannot exist without a University.
 
 Now that we've explored the various types of relationships between objects, let's examine how they all interconnect. This understanding will help clarify questions such as "What is the difference between aggregation and composition?" or "Is inheritance a type of dependency?"
 
