@@ -14,6 +14,8 @@ This repository contains examples of design patterns implemented in Java. Each f
 
 Object-Oriented Programming (OOP) is a programming paradigm that uses objects and their interactions to design applications and software. It provides a clear modular structure for programs. The key principles of OOP are encapsulation, inheritance, and polymorphism.
 
+![pilar](image.png)
+
 ### Polymorphism
 
 Polymorphism is a principle in OOP that allows objects of different types to be treated as objects of a parent type. It's like taking an animal from a bag - we don't know for sure what it is. However, if we cuddle it hard enough, the animal will emit a specific sound of joy, depending on its concrete class.
