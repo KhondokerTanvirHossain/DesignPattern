@@ -6,6 +6,40 @@ The consequence of using inheritance is that subclasses have the same interface 
 
 ![alt text](image.png)
 
+```java
+interface FourLegged {
+    void walk();
+}
+
+interface OxygenBreather {
+    void breathe();
+}
+
+class Animal implements FourLegged, OxygenBreather {
+    @Override
+    public void walk() {
+        System.out.println("Animal is walking on four legs.");
+    }
+
+    @Override
+    public void breathe() {
+        System.out.println("Animal is breathing oxygen.");
+    }
+}
+
+class Cat extends Animal {
+    @Override
+    public void walk() {
+        System.out.println("Cat is walking on four legs.");
+    }
+
+    @Override
+    public void breathe() {
+        System.out.println("Cat is breathing oxygen.");
+    }
+}
+```
+
 In most programming languages a subclass can extend only one superclass. On the other hand, any class can implement several interfaces at the same time. But, as mentioned before, if a superclass implements an interface, all of its subclasses must also implement it.
 
 This concept allows us to create a hierarchy of classes that share common attributes and behaviors, but also have their own specific ones. It's a powerful tool for organizing code and making it more modular and easier to maintain.
