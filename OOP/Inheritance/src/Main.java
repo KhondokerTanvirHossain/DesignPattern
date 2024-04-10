@@ -1,4 +1,4 @@
-package OOP.Inheritence.src;
+package OOP.Inheritance.src;
 
 interface FourLegged {
     void walk();
