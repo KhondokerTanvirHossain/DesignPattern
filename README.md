@@ -10,6 +10,17 @@ Design patterns provide general solutions, documented in a format that doesn't r
 
 This repository contains examples of design patterns implemented in Java. Each folder in the repository represents a different design pattern. Inside each folder, you'll find a Java implementation of the pattern and a `README.md` file explaining the pattern.
 
+## Object-Oriented Programming (OOP)
+
+Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data and code: data in the form of fields (often known as attributes or properties), and code, in the form of procedures (often known as methods).
+
+This repository also includes examples of OOP concepts implemented in Java. You can find these examples in the `OOP` folder. The OOP concepts covered include:
+
+- [Polymorphism](./OOP/Polymorphism)
+- [Encapsulation](./OOP/Encapsulation)
+- [Inheritance](./OOP/Inheritance)
+- [Abstraction](./OOP/Abstraction)
+- [Relations](./OOP/Relations)
 
 ## Patterns
 
@@ -65,7 +76,7 @@ The concept of design patterns has been criticized by some in the field of compu
 To run the examples, navigate to the directory of the pattern you want to explore and compile the Java files.
 
 ```bash
-cd strategy
+cd strategy/src
 javac *.java
 java Main
 ```
