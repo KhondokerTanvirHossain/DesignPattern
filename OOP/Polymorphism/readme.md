@@ -6,6 +6,8 @@ The program doesn't know the concrete type of the object contained inside the `a
 
 Polymorphism is the ability of a program to detect the real class of an object and call its implementation even when its real type is unknown in the current context. You can also think of polymorphism as the ability of an object to "pretend" to be something else, usually a class it extends or an interface it implements. In our example, the dogs and cats in the bag were pretending to be generic animals.
 
+![alt text](image.png)
+
 ```java
 Animal[] bag = {new Cat(), new Dog()};
 
