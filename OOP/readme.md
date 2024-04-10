@@ -26,8 +26,6 @@ In summary, a class serves as a blueprint that defines the structure for objects
 
 ## Class hierarchies
 
-## Understanding Class Hierarchies in OOP
-
 While we've discussed the concept of a single class, real-world programs typically involve multiple classes. Some of these classes may be organized into class hierarchies. Let's delve into what this means.
 
 Consider a dog named Fido, owned by your neighbor. Interestingly, dogs and cats share several common attributes, such as name, sex, age, and color. They also exhibit similar behaviors, such as breathing, sleeping, and running. This commonality suggests that we can define a base `Animal` class that encapsulates these shared attributes and behaviors.
