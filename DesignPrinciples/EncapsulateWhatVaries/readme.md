@@ -47,13 +47,71 @@ Over time, a method may accumulate more responsibilities, blurring the primary r
 ![alt text](image.png)
 
 ```java
-// BEFORE: Calculating tax in Order class.
-Order {
-    getOrderTotal() {
-        // ...
+class Order {
+    TaxCalculator taxCalculator;
+    List<LineItem> lineItems;
+    String country;
+    String state;
+    String city;
+
+    double getOrderTotal() {
+        double total = 0;
+        for (LineItem item : lineItems) {
+            double subtotal = item.price * item.quantity;
+            total += subtotal * getTaxRate(country, state, item.product);
+        }
+        return total;
+    }
+
+   double getTaxRate(String country, String state, Product product) {
+        if ("US".equals(country)) {
+            return getUSTax(state);
+        } else if ("EU".equals(country)) {
+            return getEUTax(state);
+        } else if ("China".equals(country)) {
+            return getChineseTax(product);
+        } else {
+            return 0;
+        }
+    }
+
+    double getUSTax(String state) {
+        // Implementation
+        return getStateTaxRate(state); // Example value
+    }
+
+    double getEUTax(String country) {
+        // Implementation
+        return getTaxRate(country);
+    }
+
+    double getChineseTax(Product product) {
+        // Implementation
+        return 0.3; // Example value
+    }
+
+    double getTaxRate(String country) {
+        if (country == "Finland") {
+            return 0.07; 
+        } else if (country == "Italy") {
+            return 0.20; 
+        } else {
+            return 0;
+        }
+    }
+
+    double getStateTaxRate(String state) {
+        if (state == "NYC") {
+            return 0.07; 
+        } else if (state == "CA") {
+            return 0.20; 
+        } else {
+            return 0;
+        }
     }
 }
 ```
+
 Objects of the `Order` class delegate all tax-related work to a
 special object that does just that.
 
@@ -61,17 +119,71 @@ special object that does just that.
 
 ```java
 // AFTER: Tax calculation is delegated to a specialized TaxCalculator class.
-Order {
-    getOrderTotal() {
-        // ...
-        total += total * taxCalculator.getTaxRate(order.country);
-        // ...
+class TaxCalculator {
+    double getTaxRate(String country, String state, Product product) {
+        if ("US".equals(country)) {
+            return getUSTax(state);
+        } else if ("EU".equals(country)) {
+            return getEUTax(state);
+        } else if ("China".equals(country)) {
+            return getChineseTax(product);
+        } else {
+            return 0;
+        }
+    }
+
+    double getUSTax(String state) {
+        // Implementation
+        return getStateTaxRate(state); // Example value
+    }
+
+    double getEUTax(String country) {
+        // Implementation
+        return getTaxRate(country);
+    }
+
+    double getChineseTax(Product product) {
+        // Implementation
+        return 0.3; // Example value
+    }
+
+    double getTaxRate(String country) {
+        if (country == "Finland") {
+            return 0.07; 
+        } else if (country == "Italy") {
+            return 0.20; 
+        } else {
+            return 0;
+        }
+    }
+
+    double getStateTaxRate(String state) {
+        if (state == "NYC") {
+            return 0.07; 
+        } else if (state == "CA") {
+            return 0.20; 
+        } else {
+            return 0;
+        }
     }
 }
 
-TaxCalculator {
-    getTaxRate(country) {
-        // Tax calculation logic...
+class Order {
+    TaxCalculator taxCalculator;
+    List<LineItem> lineItems;
+    String country;
+    String state;
+    String city;
+
+    double getOrderTotal() {
+        double total = 0;
+        for (LineItem item : lineItems) {
+            double subtotal = item.price * item.quantity;
+            total += subtotal * taxCalculator.getTaxRate(country, state, item.product);
+        }
+        return total;
     }
+
+    // Constructor, getters, and setters omitted for brevity
 }
 ```
