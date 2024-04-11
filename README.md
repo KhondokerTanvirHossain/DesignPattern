@@ -22,7 +22,25 @@ This repository also includes examples of OOP concepts implemented in Java. You 
 - [Abstraction](./OOP/Abstraction)
 - [Relations](./OOP/Relations)
 
-## Patterns
+## Design Principles
+
+Design principles guide us to design our software so that it is easy to understand, maintain, and enhance. Here are some key principles with examples:
+
+- [Encapsulate What Varies](./DesignPrinciples/EncapsulateWhatVaries)
+- [Program to an Interface, not an Implementation](./DesignPrinciples/ProgramToAnInterface)
+- [Favor Composition Over Inheritance](./DesignPrinciples/FavorCompositionOverInheritance)
+
+## SOLID Principles
+
+SOLID is an acronym for the first five object-oriented design principles by Robert C. Martin. These principles make it easier to develop software that is easy to maintain, understand, and extend. Here are the SOLID principles with examples:
+
+- [Single Responsibility Principle](./SOLID/SingleResponsibility)
+- [Open/Closed Principle](./SOLID/OpenClosed)
+- [Liskov Substitution Principle](./SOLID/LiskovSubstitution)
+- [Interface Segregation Principle](./SOLID/InterfaceSegregation)
+- [Dependency Inversion Principle](./SOLID/DependencyInversion)
+
+## Design Patterns
 
 The patterns are divided into three categories: Creational, Structural, and Behavioral.
 
