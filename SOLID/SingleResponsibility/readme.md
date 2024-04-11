@@ -1,5 +1,7 @@
 # Single Responsibility Principle
 
+> A class should have just one reason to change
+
 The Single Responsibility Principle states that a class should have just one reason to change. This means that every class should be responsible for a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.
 
 The main goal of this principle is reducing complexity. It's not necessary to invent a sophisticated design for a small program. However, as your program grows and changes, classes can become so large that it's hard to remember their details. Code navigation slows down, and you may have to scan through whole classes or even an entire program to find specific things. If a class does too many things, you risk breaking other parts of the class when you make changes.
