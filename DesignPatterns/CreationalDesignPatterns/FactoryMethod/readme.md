@@ -31,12 +31,9 @@ The client code, which uses the factory method, doesn't see a difference between
 ![alt text](image-4.png)
 
 1. The Product defines the interface common to all objects that the creator and its subclasses can produce.
-Concrete Products are various implementations of the product interface.
-2. The Creator class has a factory method that returns new product objects. The return type of this method should match the product interface.
-3. The factory method can be declared as abstract, requiring all subclasses to implement their own versions of the method. Alternatively, the base factory method can return a default product type.
-4. Despite its name, the primary responsibility of the creator isn't product creation. The creator class usually has core business logic related to products. The factory method helps decouple this logic from the concrete product classes.
-5. Concrete Creators override the base factory method to return a different type of product.
-6. The factory method doesn't always have to create new instances. It can also return existing objects from a cache, an object pool, or another source.
+2. Concrete Products are various implementations of the product interface.
+3. The Creator class has a factory method that returns new product objects. The return type of this method should match the product interface. The factory method can be declared as abstract, requiring all subclasses to implement their own versions of the method. Alternatively, the base factory method can return a default product type. Despite its name, the primary responsibility of the creator isn't product creation. The creator class usually has core business logic related to products. The factory method helps decouple this logic from the concrete product classes.
+4. Concrete Creators override the base factory method to return a different type of product. The factory method doesn't always have to create new instances. It can also return existing objects from a cache, an object pool, or another source.
 
 ## How to Implement
 
