@@ -158,10 +158,7 @@ class CarManualBuilder implements Builder {
 }
 
 class Director {
-    private Builder builder;
-
     public void setBuilder(Builder builder) {
-        this.builder = builder;
     }
 
     public void constructSportsCar(Builder builder) {
