@@ -5,6 +5,5 @@ These design patterns are all about class instantiation. This pattern can be fur
 - [Abstract Factory](AbstractFactory)
 - [Builder](Builder)
 - [Factory Method](FactoryMethod)
-- [Object Pool](ObjectPool)
 - [Prototype](Prototype)
 - [Singleton](Singleton)

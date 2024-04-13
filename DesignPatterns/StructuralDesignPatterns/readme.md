@@ -8,5 +8,4 @@ These design patterns are all about Class and Object composition. Structural cla
 - [Decorator](Decorator)
 - [Facade](Facade)
 - [Flyweight](Flyweight)
-- [Private Class Data](PrivateClassData)
 - [Proxy](Proxy)

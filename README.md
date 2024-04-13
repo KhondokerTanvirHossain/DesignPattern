@@ -51,7 +51,6 @@ These design patterns are all about class instantiation. This pattern can be fur
 - [Abstract Factory](DesignPatterns/CreationalDesignPatterns/AbstractFactory)
 - [Builder](DesignPatterns/CreationalDesignPatterns/Builder)
 - [Factory Method](DesignPatterns/CreationalDesignPatterns/FactoryMethod)
-- [Object Pool](DesignPatterns/CreationalDesignPatterns/ObjectPool)
 - [Prototype](DesignPatterns/CreationalDesignPatterns/Prototype)
 - [Singleton](DesignPatterns/CreationalDesignPatterns/Singleton)
 
@@ -65,7 +64,6 @@ These design patterns are all about Class and Object composition. Structural cla
 - [Decorator](DesignPatterns/StructuralDesignPatterns/Decorator)
 - [Facade](DesignPatterns/StructuralDesignPatterns/Facade)
 - [Flyweight](DesignPatterns/StructuralDesignPatterns/Flyweight)
-- [Private Class Data](DesignPatterns/StructuralDesignPatterns/PrivateClassData)
 - [Proxy](DesignPatterns/StructuralDesignPatterns/Proxy)
 
 ### Behavioral Design Patterns
