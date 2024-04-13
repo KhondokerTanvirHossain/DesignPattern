@@ -76,7 +76,7 @@ This implementation utilizes inheritance: the adapter inherits interfaces from b
 
 6. Clients should interact with the adapter through the client interface. This allows you to modify or extend the adapters without impacting the client code.
 
-## Example Code 
+## Example Code
 
 ![alt text](image-5.png)
 
