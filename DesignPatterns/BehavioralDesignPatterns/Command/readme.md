@@ -237,4 +237,3 @@ class CommandHistory {
 3. Use the Command pattern when you want to implement reversible operations. While there are various ways to implement undo/redo functionality, the Command pattern is a popular choice. To revert operations, you need to maintain a history of performed operations. This history is a stack containing all executed command objects and related backups of the application's state.
 
 4. However, there are two main drawbacks to this method. Firstly, saving an application's state can be challenging due to potential private data, although this can be mitigated with the Memento pattern. Secondly, state backups may consume a significant amount of RAM. An alternative implementation could involve the command performing the inverse operation instead of restoring the past state, although this can be difficult or even impossible to implement.
-

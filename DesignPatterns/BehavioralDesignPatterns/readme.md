@@ -4,7 +4,6 @@ These design patterns are all about Class's objects communication. Behavioral pa
 
 - [Chain of responsibility](ChainOfResponsibility)
 - [Command](Command)
-- [Interpreter](Interpreter)
 - [Iterator](Iterator)
 - [Mediator](Mediator)
 - [Memento](Memento)
