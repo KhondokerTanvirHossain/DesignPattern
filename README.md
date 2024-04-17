@@ -72,11 +72,9 @@ These design patterns are all about Class's objects communication. Behavioral pa
 
 - [Chain of responsibility](DesignPatterns/BehavioralDesignPatterns/ChainOfResponsibility)
 - [Command](DesignPatterns/BehavioralDesignPatterns/Command)
-- [Interpreter](DesignPatterns/BehavioralDesignPatterns/Interpreter)
 - [Iterator](DesignPatterns/BehavioralDesignPatterns/Iterator)
 - [Mediator](DesignPatterns/BehavioralDesignPatterns/Mediator)
 - [Memento](DesignPatterns/BehavioralDesignPatterns/Memento)
-- [Null Object](DesignPatterns/BehavioralDesignPatterns/NullObject)
 - [Observer](DesignPatterns/BehavioralDesignPatterns/Observer)
 - [State](DesignPatterns/BehavioralDesignPatterns/State)
 - [Strategy](DesignPatterns/BehavioralDesignPatterns/Strategy)
