@@ -219,7 +219,6 @@ class PlayingState implements State {
 }
 ```
 
-
 ## Applicability
 
 1. Use the State pattern when an object's behavior varies based on its current state, the number of states is large, and the state-specific code frequently changes. The pattern recommends extracting all state-specific code into a set of separate classes. As a result, you can add new states or modify existing ones independently, reducing maintenance costs.
