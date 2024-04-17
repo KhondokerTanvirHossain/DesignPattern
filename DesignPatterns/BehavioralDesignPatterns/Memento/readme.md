@@ -150,7 +150,6 @@ class Command {
 }
 ```
 
-
 ## Applicability
 
 1. The Memento pattern is useful when you need to create snapshots of an object's state to facilitate the restoration of a previous state.

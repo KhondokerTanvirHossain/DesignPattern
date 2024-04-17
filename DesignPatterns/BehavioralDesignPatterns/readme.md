@@ -7,7 +7,6 @@ These design patterns are all about Class's objects communication. Behavioral pa
 - [Iterator](Iterator)
 - [Mediator](Mediator)
 - [Memento](Memento)
-- [Null Object](NullObject)
 - [Observer](Observer)
 - [State](State)
 - [Strategy](Strategy)
